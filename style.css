@@ -1,0 +1,88 @@
+/* Personal blog - simple stylesheet */
+
+:root {
+    --bg: #070d0b;
+    --text: #eef3f1;
+    --muted: #93a39c;
+    --line: #1e2d27;
+    --accent: #2fe6a6;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--bg);
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin: 0 0 10px;
+    color: var(--accent);
+}
+
+header p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 24px 0;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+nav a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+main h2 {
+    font-size: 1.3rem;
+    margin: 0 0 12px;
+}
+
+main p {
+    margin: 0 0 16px;
+}
+
+ul {
+    padding-left: 22px;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+li::marker {
+    color: var(--accent);
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+        padding: 24px 16px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin-right: 14px;
+    }
+}
